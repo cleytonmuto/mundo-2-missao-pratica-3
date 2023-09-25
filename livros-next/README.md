@@ -12,3 +12,9 @@
 **Missão Prática | Nível 3 | Mundo 2**
 
 React JS + Next JS
+
+site React JS: https://livros-react.vercel.app/
+
+site Next JS: http://fullstackers.com.br:3000/
+
+ou https://livros-next.vercel.app/
