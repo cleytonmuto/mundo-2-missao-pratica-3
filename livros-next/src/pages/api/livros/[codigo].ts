@@ -1,10 +1,12 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { controleLivros } from '.';
+import { ControleLivros } from '../../../../classes/controle/ControleLivros';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (req: NextApiRequest, res: NextApiResponse) => {
-  const { codigo } = req.query;
+  const { codigo } = req.query as { codigo : string };
+  console.log(`codigo = ${codigo}`);
   try {
+    const controleLivros = new ControleLivros();
     if (req.method === 'DELETE') {
       controleLivros.excluir(Number(codigo));
       res.status(200).json({
@@ -13,7 +15,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     }
     else {
       res.status(405).json({
-        message: 'Método não permitido'
+        message: 'API livros [codigo] - Método não permitido'
       });
     }
   }
