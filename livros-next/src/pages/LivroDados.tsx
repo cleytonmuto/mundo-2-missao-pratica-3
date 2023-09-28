@@ -20,7 +20,7 @@ const LivroDados = () => {
   const [codEditora, setCodEditora] = useState(opcoes[0].value);
   const navigate = useRouter().push;
 
-  const baseURL = 'http://localhost:3000/api/livros';
+  const baseURL = 'http://fullstackers.com.br:3000/api/livros';
 
   const incluirLivro = async (livro: Livro) => {
     const response = await fetch(baseURL, {

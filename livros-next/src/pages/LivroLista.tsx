@@ -5,7 +5,7 @@ import { Menu } from '../../components/Menu';
 import Livro from '../../classes/modelo/Livro';
 import { LinhaLivro } from '../../components/LinhaLivro';
 
-const baseURL = 'http://localhost:3000/api/livros';
+const baseURL = 'http://fullstackers.com.br:3000/api/livros';
 
 const LivroLista = () => {
   const [livros, setLivros] = useState<Livro[]>([]);
