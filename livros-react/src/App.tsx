@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-import LivroLista from './LivroLista';
-import LivroDados from './LivroDados';
+import LivroLista from './LivroLista.tsx';
+import LivroDados from './LivroDados.tsx';
 
 import './App.css';
 
